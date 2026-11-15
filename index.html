@@ -4,11 +4,36 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#050505">
-  <meta name="description" content="TIME OF GARAM — Photography by GARAM. Long exposure and intentional camera movement.">
-  <title>TIME OF GARAM — Photography by GARAM</title>
+  <title>TIME OF GARAM — Long Exposure Photography by GARAM</title>
+  <meta name="description" content="GARAM의 장노출·ICM 사진 포트폴리오. What Moves, What Remains? — 끊임없이 움직이는 세상 속에 묻혀 있는 시간을 드러냅니다. IPA 2026 Official Selection · WSPA 2026 Honorable Mention.">
+  <meta name="author" content="GARAM">
+
+  <!-- 링크 공유 미리보기 (카카오톡·인스타그램·페이스북 등) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="TIME OF GARAM">
+  <meta property="og:title" content="TIME OF GARAM — What Moves, What Remains?">
+  <meta property="og:description" content="Long exposure photography by GARAM. IPA 2026 Official Selection · WSPA 2026 Honorable Mention.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preload" as="image" href="assets/time-01.jpg">
+  <link rel="preload" as="image" href="assets/works/large/time-01.jpg" imagesrcset="assets/works/medium/time-01.jpg 1080w, assets/works/large/time-01.jpg 1800w" imagesizes="(max-width: 760px) calc(100vw - 36px), min(62vw, 75vh)">
   <link rel="stylesheet" href="style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "GARAM",
+    "jobTitle": "Photographer",
+    "description": "Long exposure and ICM photography exploring the time hidden within a world in constant motion.",
+    "homeLocation": { "@type": "Place", "name": "Seoul, Korea" },
+    "sameAs": ["https://www.instagram.com/timeof_garam/"],
+    "award": ["IPA 2026 Official Selection", "WSPA 2026 Honorable Mention"]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#works">작품으로 바로가기</a>
@@ -17,6 +42,7 @@
     <a class="wordmark" href="#top" aria-label="TIME OF GARAM 홈">TIME OF GARAM</a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">MENU</button>
     <nav id="site-nav" aria-label="주요 메뉴">
+      <a href="#statement">STATEMENT</a>
       <a href="#works">WORKS</a>
       <a href="#about">ABOUT</a>
       <a href="https://www.instagram.com/timeof_garam/" target="_blank" rel="noreferrer">INSTAGRAM</a>
@@ -26,14 +52,41 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">PHOTOGRAPHY BY GARAM</p>
+        <p class="eyebrow">LONG EXPOSURE PHOTOGRAPHY BY GARAM</p>
         <h1 id="hero-title">TIME<br>OF<br>GARAM</h1>
-        <p class="hero-note">Light, movement,<br>and the memory of place.</p>
+        <p class="hero-note" lang="en">What moves,<br>what remains?</p>
+        <p class="hero-awards" lang="en">IPA 2026 · Official Selection<br>WSPA 2026 · Honorable Mention</p>
       </div>
-      <button class="hero-image image-button" type="button" data-index="0" aria-label="대표 작품 크게 보기">
-        <img src="assets/time-01.jpg" width="1536" height="2048" alt="호수 위 도시의 불빛이 수직으로 길게 흘러내린 장노출 사진">
+      <button class="hero-image image-button" type="button" aria-haspopup="dialog">
+        <img src="assets/works/medium/time-01.jpg"
+             srcset="assets/works/medium/time-01.jpg 1080w, assets/works/large/time-01.jpg 1800w"
+             sizes="(max-width: 760px) calc(100vw - 36px), min(62vw, 75vh)"
+             width="1080" height="1440" fetchpriority="high" alt="호수 위 도시의 불빛이 수직으로 길게 흘러내린 장노출 사진">
       </button>
-      <a class="scroll-cue" href="#works" aria-label="작품 목록으로 이동">SCROLL <span aria-hidden="true">↓</span></a>
+      <a class="scroll-cue" href="#statement" aria-label="작가노트로 이동">SCROLL <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="statement" id="statement" aria-labelledby="statement-title">
+      <div class="section-label">
+        <p>STATEMENT</p>
+        <p>LONG EXPOSURE</p>
+      </div>
+      <div class="statement-body">
+        <h2 id="statement-title" lang="en">What Moves,<br>What Remains?</h2>
+        <p class="statement-ko-title">무엇이 움직이고, 무엇이 남는가?</p>
+        <div class="statement-text">
+          <div class="statement-col statement-ko">
+            <p>저는 끊임없이 움직이는 세상 속에 묻혀 있는 시간을 드러내고자 합니다.</p>
+            <p>우리가 정지해 있다고 믿는 것들조차 시간의 흐름 속에서 조금씩 변화하고, 눈앞에서 사라지는 순간들 또한 어딘가에 생명의 흔적을 남깁니다.</p>
+            <p>장노출을 통해 제가 탐구하고자 했던 것은 단순한 움직임의 시각화가 아니라, 그 안에 축적된 시간과 우리가 미처 인식하지 못했던 세계의 생명력이었습니다.</p>
+          </div>
+          <div class="statement-col statement-en" lang="en">
+            <p>I seek to reveal the time hidden within a world in constant motion.</p>
+            <p>Even the things we believe to be still are gradually changing with the passage of time, while fleeting moments leave traces of life somewhere in their wake.</p>
+            <p>Through long-exposure photography, what I have sought to explore is not merely the visualization of movement, but the passage of time embedded within it and the vitality of a world that often goes unnoticed.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="works" id="works" aria-labelledby="works-title">
@@ -43,83 +96,348 @@
         <p class="series-intro">익숙한 장소의 형태를 빛과 움직임으로 해체합니다.<br>사진은 현실을 고정하는 기록이 아니라, 시간이 지나간 방식에 대한 감각이 됩니다.</p>
       </div>
 
+      <!--
+        작품 추가·순서 변경 방법은 README.md의 「작품 추가·교체」를 참고하세요.
+        figure 하나가 작품 하나입니다. 번호(02, 03 …)는 자동으로 매겨집니다.
+        배치 class: l(왼쪽) · r(오른쪽) · c(가운데 단독) · wide(가로 사진) · wide-r(가로 사진, 오른쪽) · drop(아래로 엇갈림)
+      -->
       <div class="gallery">
-        <figure class="gallery-item tall drift-right">
-          <button class="image-button" type="button" data-index="1" aria-label="Fluid Reality 작품 2 크게 보기">
-            <img src="assets/time-02.jpg" width="1536" height="2048" loading="lazy" alt="검은 밤 위로 하나의 흰 빛기둥이 길게 솟은 장노출 사진">
+        <figure class="work l">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/time-02.jpg"
+                 srcset="assets/works/medium/time-02.jpg 1080w, assets/works/large/time-02.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="검은 밤 위로 하나의 흰 빛기둥이 길게 솟은 장노출 사진">
           </button>
-          <figcaption><span>FLUID REALITY</span><span>02</span></figcaption>
+          <figcaption></figcaption>
         </figure>
 
-        <figure class="gallery-item tall">
-          <button class="image-button" type="button" data-index="2" aria-label="Fluid Reality 작품 3 크게 보기">
-            <img src="assets/time-03.jpg" width="1536" height="2048" loading="lazy" alt="어두운 성당 내부를 흰색과 붉은색 빛기둥이 가로지르는 장노출 사진">
+        <figure class="work r drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/time-03.jpg"
+                 srcset="assets/works/medium/time-03.jpg 1080w, assets/works/large/time-03.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="어두운 성당 내부를 흰색과 붉은색 빛기둥이 가로지르는 장노출 사진">
           </button>
-          <figcaption><span>FLUID REALITY</span><span>03</span></figcaption>
+          <figcaption></figcaption>
         </figure>
 
-        <figure class="gallery-item wide full-bleed">
-          <button class="image-button" type="button" data-index="3" aria-label="Fluid Reality 작품 4 크게 보기">
-            <img src="assets/time-04.jpg" width="1536" height="2048" loading="lazy" alt="반복되는 교각과 반영이 흑백의 수직선으로 이어지는 장노출 사진">
+        <figure class="work c">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/time-10.jpg"
+                 srcset="assets/works/medium/time-10.jpg 1080w, assets/works/large/time-10.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 46vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="반복되는 교각과 반영이 흑백의 수직선으로 이어지는 장노출 사진">
           </button>
-          <figcaption><span>FLUID REALITY</span><span>04</span></figcaption>
+          <figcaption></figcaption>
         </figure>
 
-        <figure class="gallery-item tall compact">
-          <button class="image-button" type="button" data-index="4" aria-label="Fluid Reality 작품 5 크게 보기">
-            <img src="assets/time-05.jpg" width="1536" height="2048" loading="lazy" alt="푸른색과 흰색의 굽은 빛이 겹쳐진 추상 ICM 사진">
+        <figure class="work l drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf6345.jpg"
+                 srcset="assets/works/medium/dsf6345.jpg 1080w, assets/works/large/dsf6345.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="밤의 도시를 높은 곳에서 내려다본, 불빛이 이어진 대로와 빼곡한 건물들의 장노출 사진">
           </button>
-          <figcaption><span>FLUID REALITY</span><span>05</span></figcaption>
+          <figcaption></figcaption>
         </figure>
 
-        <figure class="gallery-item tall offset-down">
-          <button class="image-button" type="button" data-index="5" aria-label="Fluid Reality 작품 6 크게 보기">
-            <img src="assets/time-06.jpg" width="1536" height="2048" loading="lazy" alt="주황색과 푸른색 도시의 불빛이 파동처럼 교차하는 장노출 사진">
+        <figure class="work r">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/time-09.jpg"
+                 srcset="assets/works/medium/time-09.jpg 1080w, assets/works/large/time-09.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="어두운 건물 사이로 흰 빛의 곡선이 물결처럼 흐르는 흑백 장노출 사진">
           </button>
-          <figcaption><span>FLUID REALITY</span><span>06</span></figcaption>
+          <figcaption></figcaption>
         </figure>
 
-        <figure class="gallery-item tall drift-right">
-          <button class="image-button" type="button" data-index="6" aria-label="Fluid Reality 작품 7 크게 보기">
-            <img src="assets/time-07.jpg" width="1536" height="2048" loading="lazy" alt="도시의 건축물과 간판이 수직으로 겹쳐 흐르는 ICM 사진">
+        <figure class="work wide landscape">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf6952.jpg"
+                 srcset="assets/works/medium/dsf6952.jpg 1440w, assets/works/large/dsf6952.jpg 2400w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 80vw"
+                 width="1440" height="1080" loading="lazy" decoding="async" alt="강변의 고층 건물과 다리 위로 빛의 궤적이 겹쳐 흐르고 수면에 반영이 드리운 장노출 사진">
           </button>
-          <figcaption><span>FLUID REALITY</span><span>07</span></figcaption>
+          <figcaption></figcaption>
         </figure>
 
-        <figure class="gallery-item tall">
-          <button class="image-button" type="button" data-index="7" aria-label="Fluid Reality 작품 8 크게 보기">
-            <img src="assets/time-08.jpg" width="1536" height="2048" loading="lazy" alt="움직이는 인물의 실루엣과 빛의 궤적이 겹친 장노출 사진">
+        <figure class="work l">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/time-05.jpg"
+                 srcset="assets/works/medium/time-05.jpg 1080w, assets/works/large/time-05.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="주황색과 푸른색 도시의 불빛이 파동처럼 교차하는 장노출 사진">
           </button>
-          <figcaption><span>FLUID REALITY</span><span>08</span></figcaption>
+          <figcaption></figcaption>
         </figure>
 
-        <figure class="gallery-item landscape full-bleed">
-          <button class="image-button" type="button" data-index="8" aria-label="Fluid Reality 작품 9 크게 보기">
-            <img src="assets/time-09.jpg" width="2048" height="1536" loading="lazy" alt="호수 위 주황색과 푸른색 빛이 파도처럼 이어지는 장노출 사진">
+        <figure class="work r drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/time-07.jpg"
+                 srcset="assets/works/medium/time-07.jpg 1080w, assets/works/large/time-07.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="어둠 속 자판기의 불빛이 무지갯빛 연기처럼 피어오르는 장노출 사진">
           </button>
-          <figcaption><span>FLUID REALITY</span><span>09</span></figcaption>
+          <figcaption></figcaption>
         </figure>
 
-        <figure class="gallery-item landscape compact-end">
-          <button class="image-button" type="button" data-index="9" aria-label="Fluid Reality 작품 10 크게 보기">
-            <img src="assets/time-10.jpg" width="2048" height="1536" loading="lazy" alt="검은 호수 위 주황색과 푸른색 빛의 곡선이 크게 휘어진 장노출 사진">
+        <figure class="work wide landscape">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/fluid-09.jpg"
+                 srcset="assets/works/medium/fluid-09.jpg 1440w, assets/works/large/fluid-09.jpg 2048w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 80vw"
+                 width="1440" height="1080" loading="lazy" decoding="async" alt="호수 위 주황색과 푸른색 빛이 파도처럼 이어지는 장노출 사진">
           </button>
-          <figcaption><span>FLUID REALITY</span><span>10</span></figcaption>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work wide-r landscape">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/fluid-10.jpg"
+                 srcset="assets/works/medium/fluid-10.jpg 1440w, assets/works/large/fluid-10.jpg 2048w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 64vw"
+                 width="1440" height="1080" loading="lazy" decoding="async" alt="검은 호수 위 주황색과 푸른색 빛의 곡선이 크게 휘어진 장노출 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work l drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf6822.jpg"
+                 srcset="assets/works/medium/dsf6822.jpg 1080w, assets/works/large/dsf6822.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="흰 빛의 곡선이 겹겹이 물결치고 한쪽에 붉은 빛이 번지는 장노출 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work r">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf6846.jpg"
+                 srcset="assets/works/medium/dsf6846.jpg 1080w, assets/works/large/dsf6846.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="어둠 속에 흰 빛과 붉은 빛이 고리 모양으로 이어지는 장노출 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work wide landscape">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf6431.jpg"
+                 srcset="assets/works/medium/dsf6431.jpg 1440w, assets/works/large/dsf6431.jpg 2400w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 80vw"
+                 width="1440" height="1080" loading="lazy" decoding="async" alt="보랏빛 밤하늘 아래 도시의 불빛이 한 점에서 방사형으로 뻗어나가는 줌 장노출 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work l">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/time-06.jpg"
+                 srcset="assets/works/medium/time-06.jpg 1080w, assets/works/large/time-06.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="거리를 가득 메운 인파가 수직의 흐름으로 번져 보이는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work r drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf1299.jpg"
+                 srcset="assets/works/medium/dsf1299.jpg 1080w, assets/works/large/dsf1299.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="빨래가 걸린 오래된 건물의 발코니가 빛과 함께 비스듬히 흐르는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work c">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/time-04.jpg"
+                 srcset="assets/works/medium/time-04.jpg 1080w, assets/works/large/time-04.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 46vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="움직이는 인물의 실루엣과 빛의 궤적이 겹친 장노출 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work l drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8240.jpg"
+                 srcset="assets/works/medium/dsf8240.jpg 1080w, assets/works/large/dsf8240.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="흰 모자를 쓴 인물이 거리의 간판과 함께 흔들리며 겹쳐진 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work r">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8022.jpg"
+                 srcset="assets/works/medium/dsf8022.jpg 1080w, assets/works/large/dsf8022.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="어두운 거리를 걷는 인물의 형체가 빛과 함께 흩어지는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work l">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf7409.jpg"
+                 srcset="assets/works/medium/dsf7409.jpg 1080w, assets/works/large/dsf7409.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="흰 옷을 입은 인물이 어두운 배경 속에서 흐릿하게 번지는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work r drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf7420.jpg"
+                 srcset="assets/works/medium/dsf7420.jpg 1080w, assets/works/large/dsf7420.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="어두운 거리에서 차량에 비친 빛과 인물의 형체가 겹쳐 보이는 장노출 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work c">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8892.jpg"
+                 srcset="assets/works/medium/dsf8892.jpg 1080w, assets/works/large/dsf8892.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 46vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="검은 지붕 아래 인물과 빛의 줄무늬가 사선으로 흐르는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work l drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8857.jpg"
+                 srcset="assets/works/medium/dsf8857.jpg 1080w, assets/works/large/dsf8857.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="어둠 속 인물의 옆모습 위로 빛의 곡선이 겹쳐 흐르는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work r">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8941.jpg"
+                 srcset="assets/works/medium/dsf8941.jpg 1080w, assets/works/large/dsf8941.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="어둠 속 인물의 형체 위로 빛의 줄무늬가 수직으로 흘러내리는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work l">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8578.jpg"
+                 srcset="assets/works/medium/dsf8578.jpg 1080w, assets/works/large/dsf8578.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="초록 나무와 푸른 하늘 아래 거리의 색들이 둥근 빛 번짐으로 뒤섞인 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work r drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8581.jpg"
+                 srcset="assets/works/medium/dsf8581.jpg 1080w, assets/works/large/dsf8581.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="어두운 인물의 실루엣 주위로 노란 빛 번짐과 색들이 흐르는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work c">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/fluid-05.jpg"
+                 srcset="assets/works/medium/fluid-05.jpg 1080w, assets/works/large/fluid-05.jpg 1536w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 46vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="푸른색과 흰색의 굽은 빛이 겹쳐진 추상 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work l drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8688.jpg"
+                 srcset="assets/works/medium/dsf8688.jpg 1080w, assets/works/large/dsf8688.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="밝은 하늘을 배경으로 인물의 형체가 사선으로 흔들리는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work r">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8689.jpg"
+                 srcset="assets/works/medium/dsf8689.jpg 1080w, assets/works/large/dsf8689.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="어두운 나무 그림자 아래 걸어가는 인물이 빛과 함께 흐르는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work l">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8743.jpg"
+                 srcset="assets/works/medium/dsf8743.jpg 1080w, assets/works/large/dsf8743.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="밝은 하늘 아래 붉은 옷을 입은 인물이 바람처럼 흔들리는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work r drop">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/dsf8732.jpg"
+                 srcset="assets/works/medium/dsf8732.jpg 1080w, assets/works/large/dsf8732.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 38vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="흰 하늘 아래 걷는 인물이 흑백의 흐름 속에 번지는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
+        </figure>
+
+        <figure class="work c">
+          <button class="image-button" type="button" aria-haspopup="dialog">
+            <img src="assets/works/medium/time-08.jpg"
+                 srcset="assets/works/medium/time-08.jpg 1080w, assets/works/large/time-08.jpg 1800w"
+                 sizes="(max-width: 760px) calc(100vw - 40px), 46vw"
+                 width="1080" height="1440" loading="lazy" decoding="async" alt="만개한 벚꽃 나무가 빛과 함께 사선으로 흐르는 ICM 사진">
+          </button>
+          <figcaption></figcaption>
         </figure>
       </div>
     </section>
 
     <section class="about" id="about" aria-labelledby="about-title">
-      <div class="about-label">
+      <div class="section-label">
         <p>ABOUT</p>
         <p>SEOUL, KOREA</p>
       </div>
       <div class="about-body">
         <h2 id="about-title">GARAM</h2>
         <p class="about-lead">ICM을 통해 눈에 보이는 형태를 기록하는 데서 벗어나,<br>세계의 표면 아래 흐르고 있는 보이지 않는 생명력과 시간의 흔적을 드러내고자 한다.<br>움직임과 빛이 만들어내는 흔들림 속에서 장소가 품어온 역사와 감각,<br>그리고 쉽게 포착되지 않는 존재의 흐름을 시각적으로 탐구한다.</p>
-        <p lang="en">Through ICM, the work moves beyond recording visible forms to reveal the unseen vitality and traces of time flowing beneath the surface of the world. Within the tremor created by movement and light, it visually explores the history and sensations held by place, and the flow of existence that resists easy capture.</p>
-        <div class="history">
-          <p><span>2026</span> Fujifilm Photo Festa · Nodeul Island Gallery, Seoul</p>
+        <p class="about-en" lang="en">Through ICM, the work moves beyond recording visible forms to reveal the unseen vitality and traces of time flowing beneath the surface of the world. Within the tremor created by movement and light, it visually explores the history and sensations held by place, and the flow of existence that resists easy capture.</p>
+
+        <div class="cv">
+          <div class="cv-group">
+            <h3>AWARDS</h3>
+            <ul>
+              <li><span class="cv-year">2026</span><span class="cv-title" lang="en">IPA</span><span class="cv-note" lang="en">Official Selection</span></li>
+              <li><span class="cv-year">2026</span><span class="cv-title" lang="en">WSPA</span><span class="cv-note" lang="en">Honorable Mention</span></li>
+            </ul>
+          </div>
+          <div class="cv-group">
+            <h3>EXHIBITIONS</h3>
+            <ul>
+              <li><span class="cv-year">2026</span><span class="cv-title" lang="en">Fujifilm Photo Festa</span><span class="cv-note" lang="en">Nodeul Island Gallery, Seoul</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -128,7 +446,7 @@
   <footer>
     <p>TIME OF GARAM</p>
     <a href="https://www.instagram.com/timeof_garam/" target="_blank" rel="noreferrer">@timeof_garam</a>
-    <p>© <span id="year">2026</span> GARAM</p>
+    <p>© <span id="year">2026</span> GARAM. All rights reserved.</p>
   </footer>
 
   <dialog class="lightbox" aria-label="작품 전체 화면 보기">
@@ -136,7 +454,7 @@
     <button class="lightbox-nav lightbox-prev" type="button" aria-label="이전 작품">←</button>
     <div class="lightbox-stage">
       <img src="" alt="">
-      <p><span>FLUID REALITY</span><span class="lightbox-count"></span></p>
+      <p><span>FLUID REALITY</span><span class="lightbox-count" aria-live="polite"></span></p>
     </div>
     <button class="lightbox-nav lightbox-next" type="button" aria-label="다음 작품">→</button>
   </dialog>
