@@ -13,9 +13,12 @@
 - **개인정보 보호**: 사진 파일의 촬영 정보(EXIF: 위치·카메라 정보 등)를 지우고, 저작권 정보(`GARAM`, `© 2026 GARAM`)를 넣었습니다.
 - **모바일 메뉴 수정**: 메뉴를 열면 배경이 비쳐 글자가 겹쳐 보이던 문제를 고쳤습니다.
 - **사진 확대 보기 개선**: 모바일에서 좌우로 밀어 넘기기, 다음·이전 사진 미리 불러오기, 확대 중 뒤 화면 스크롤 잠금.
-- **공유 미리보기·검색 정보**: 카카오톡·SNS에 링크를 붙였을 때 보이는 대표 이미지(`assets/og-image.jpg`)와 설명, 검색엔진용 작가 정보를 추가했습니다.
+- **공유 미리보기·검색 정보**: 카카오톡·SNS에 링크를 붙였을 때 보이는 대표 이미지(`og-image.jpg`)와 설명, 검색엔진용 작가 정보를 추가했습니다.
+- **폴더 없이 한곳에**: 모든 파일을 `index.html`과 같은 곳에 둡니다. GitHub 웹에서 파일을 올릴 때 폴더가 사라지는 문제가 생기지 않습니다.
 
-## 폴더 구성
+## 파일 구성
+
+모든 파일이 한 폴더 안에 있습니다. 하위 폴더는 없습니다.
 
 ```text
 TIME-OF-GARAM-GITHUB/
@@ -24,24 +27,21 @@ TIME-OF-GARAM-GITHUB/
 ├── script.js             메뉴와 사진 확대 기능
 ├── favicon.svg           브라우저 아이콘
 ├── README.md             이 안내서
-└── assets/
-    ├── og-image.jpg      링크 공유 미리보기 이미지 (1200×630)
-    └── works/
-        ├── large/        큰 사진 32장 (긴 변 2400px, 확대 보기용)
-        └── medium/       중간 사진 32장 (긴 변 1440px, 목록용)
+├── og-image.jpg          링크 공유 미리보기 이미지 (1200×630)
+├── time-01.jpg           큰 사진 (긴 변 2400px, 확대 보기용) ─ 32장
+├── time-01-1440.jpg      중간 사진 (긴 변 1440px, 목록용)   ─ 32장
+└── …
 ```
 
-`index.html`은 반드시 저장소의 가장 바깥쪽에 있어야 합니다. ZIP 파일 자체를 GitHub에 올리지 말고, ZIP을 푼 뒤 안에 있는 파일과 `assets` 폴더를 모두 업로드하세요.
+## GitHub에 올리기 (업데이트할 때도 동일)
 
-## 이미 운영 중인 GitHub 저장소를 업데이트하기
+1. ZIP을 풀고, 풀린 `TIME-OF-GARAM-GITHUB` 폴더를 엽니다.
+2. 폴더 안에서 **Ctrl+A**로 파일을 모두 선택합니다. (폴더 자체가 아니라 안의 파일들)
+3. GitHub 저장소 첫 화면에서 `Add file` → `Upload files`로 들어가, 선택한 파일들을 끌어다 놓습니다. (`choose your files`로 골라도 됩니다.)
+4. 업로드 진행 막대가 **모두 끝난 뒤** `Commit changes`를 누릅니다. 같은 이름의 파일은 새 파일로 바뀌고, 바뀐 것이 없는 파일은 그대로 둡니다.
+5. 1~2분 뒤 홈페이지에서 **Ctrl+F5**로 새로고침합니다.
 
-이전 버전의 `assets/time-01.jpg` ~ `time-10.jpg`는 더 이상 쓰지 않습니다. 그대로 두면 저장소 용량만 차지하므로(특히 21.8MB짜리 파일) 먼저 지우는 것을 권장합니다.
-
-1. GitHub 저장소에서 `assets` 폴더를 엽니다.
-2. 오른쪽 위 `…` 메뉴 → `Delete directory`를 선택하고 `Commit changes`를 누릅니다.
-3. 저장소 첫 화면에서 `Add file` → `Upload files`를 선택합니다.
-4. ZIP을 푼 폴더 안의 `index.html`, `style.css`, `script.js`, `favicon.svg`, `README.md`와 `assets` 폴더를 한꺼번에 끌어다 놓습니다. 같은 이름의 파일은 새 파일로 바뀝니다.
-5. `Commit changes`를 누르면 1~2분 뒤 웹사이트에 반영됩니다. 바로 바뀌지 않으면 브라우저에서 새로고침(Shift+새로고침)을 해 보세요.
+한 번에 올릴 수 있는 파일은 100개까지입니다. 현재 69개라 한 번에 올라갑니다.
 
 ## GitHub Pages로 처음 공개하기
 
@@ -49,7 +49,7 @@ TIME-OF-GARAM-GITHUB/
 2. Repository name에 `time-of-garam`을 입력합니다.
 3. 무료 계정에서 GitHub Pages를 쓰기 쉽도록 `Public`을 선택하고 저장소를 만듭니다.
 4. 새 저장소 화면에서 `Add file` → `Upload files`를 선택합니다.
-5. 이 ZIP을 푼 뒤 나오는 파일 전체와 `assets` 폴더를 업로드합니다. ZIP 파일 자체는 올리지 않습니다.
+5. 위 「GitHub에 올리기」처럼 폴더 안의 파일을 모두 선택해 업로드합니다. ZIP 파일 자체는 올리지 않습니다.
 6. 아래쪽 `Commit changes`를 누릅니다.
 7. 저장소의 `Settings` → 왼쪽 `Pages`로 이동합니다.
 8. `Build and deployment`의 Source를 `Deploy from a branch`로 선택합니다.
@@ -60,12 +60,14 @@ TIME-OF-GARAM-GITHUB/
 
 ### 1. 사진 내보내기 (Lightroom 등)
 
-같은 사진을 **같은 파일 이름**으로 두 번 내보냅니다. 파일 이름은 영문 소문자·숫자·하이픈(-)만 쓰세요. 밑줄(_)로 시작하는 이름은 GitHub Pages에서 보이지 않을 수 있습니다.
+같은 사진을 두 번 내보냅니다. 파일 이름은 영문 소문자·숫자·하이픈(-)만 쓰세요. 밑줄(_)로 시작하는 이름은 GitHub Pages에서 보이지 않을 수 있습니다.
 
-| 폴더 | 크기 | 품질 |
+| 파일 이름 (예시) | 크기 | 품질 |
 |---|---|---|
-| `assets/works/large/` | 긴 변 2400px | JPG 품질 80 |
-| `assets/works/medium/` | 긴 변 1440px | JPG 품질 80 |
+| `dsf9001.jpg` | 긴 변 2400px | JPG 품질 80 |
+| `dsf9001-1440.jpg` | 긴 변 1440px | JPG 품질 80 |
+
+두 파일 모두 `index.html`과 같은 곳(저장소 맨 바깥)에 올립니다. 1440px 파일을 깜빡하고 안 올려도 2400px 사진으로 대신 보이니 화면이 깨지지는 않습니다.
 
 원본(수십 MB)을 그대로 올리면 페이지가 매우 느려집니다. 한 장에 1MB 안팎이면 적당합니다. 내보낼 때 위치 정보(GPS)는 빼는 것을 권장합니다.
 
@@ -73,8 +75,8 @@ TIME-OF-GARAM-GITHUB/
 
 `index.html`에서 `<div class="gallery">` 안의 `<figure class="work …">…</figure>` 묶음 하나가 작품 하나입니다. 기존 묶음 하나를 복사해 원하는 위치에 붙여 넣고 세 군데를 바꿉니다.
 
-- `medium/파일이름.jpg`, `large/파일이름.jpg` (총 3곳)
-- `width`, `height` — medium 파일의 가로·세로 픽셀 (세로 사진 1080×1440, 가로 사진 1440×1080)
+- 파일 이름 (`파일이름-1440.jpg` 2곳, `파일이름.jpg` 1곳)
+- `width`, `height` — 1440px 파일의 가로·세로 픽셀 (세로 사진 1080×1440, 가로 사진 1440×1080)
 - `alt` — 사진을 글로 짧게 설명 (시각장애인용 화면 낭독, 검색에 쓰입니다)
 
 작품 번호(02, 03 …)와 확대 보기 순서는 자동으로 매겨지므로 따로 고칠 필요가 없습니다. 순서를 바꾸려면 묶음의 위치만 옮기면 됩니다.
@@ -93,7 +95,7 @@ TIME-OF-GARAM-GITHUB/
 
 ### 3. 대표 사진(첫 화면) 바꾸기
 
-`index.html` 위쪽의 `hero-image` 안 `time-01.jpg`(3곳)와 `<head>`의 `preload` 줄에 있는 `time-01.jpg`(3곳)를 새 파일 이름으로 바꿉니다.
+`index.html` 위쪽의 `hero-image` 안과 `<head>`의 `preload` 줄에 있는 `time-01-1440.jpg`, `time-01.jpg`를 새 파일 이름으로 바꿉니다. (모두 6곳)
 
 ## 이력·작가노트 수정
 
@@ -102,19 +104,13 @@ TIME-OF-GARAM-GITHUB/
 - **검색·공유용 설명**: `<head>`의 `description`, `og:description`, 그리고 `"award"` 목록.
 - **작가노트**: `id="statement"` 섹션. 국문은 `statement-ko`, 영문은 `statement-en` 안의 `<p>` 한 개가 한 문단입니다.
 
-## 링크 공유 미리보기 완성하기
+## 링크 공유 미리보기
 
-웹사이트 주소가 정해지면 `index.html`의 다음 줄을 전체 주소로 바꿔 주세요. 일부 SNS는 전체 주소여야 미리보기 이미지를 보여 줍니다.
-
-```html
-<meta property="og:image" content="assets/og-image.jpg">
-<!-- 예시 → -->
-<meta property="og:image" content="https://깃허브아이디.github.io/time-of-garam/assets/og-image.jpg">
-```
+`index.html`의 `og:image`, `og:url`, `canonical`에 홈페이지 주소(`https://timeofgaram.github.io/time-of-garam/`)가 들어 있습니다. 나중에 개인 도메인으로 옮기면 이 세 줄과 아래쪽 작가 정보의 `"url"`을 새 주소로 바꿔 주세요.
 
 ## 사진 파일 대응표
 
-웹사이트의 번호와 원본 파일의 대응입니다. (`fluid-` 파일은 이전 홈페이지에만 있던 사진으로, 원본 대신 이전 웹용 파일을 사용했습니다.)
+웹사이트의 번호와 원본 파일의 대응입니다. 각 사진에는 같은 이름의 `-1440.jpg` 파일이 하나씩 더 있습니다. (`fluid-` 파일은 이전 홈페이지에만 있던 사진으로, 원본 대신 이전 웹용 파일을 사용했습니다.)
 
 | 번호 | 웹사이트 파일 | 원본 |
 |---|---|---|
